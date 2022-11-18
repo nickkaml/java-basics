@@ -17,5 +17,6 @@ public class Main {
         // Проверьте разницу в d++ и ++d
         System.out.println("d++   = " +  (d++));
         System.out.println("++d   = " +  (d++));
+        //commit
     }
 }
