@@ -2,21 +2,35 @@ package ru.nickkaml;
 
 public class Main {
     public static void main(String[] args) {
-        int a = 10;
-        int b = 20;
-        int c = 25;
-        int d = 25;
-        System.out.println("a + b = " + (a + b));
-        System.out.println("a - b = " + (a - b));
-        System.out.println("a * b = " + (a * b));
-        System.out.println("b / a = " + (b / a));
-        System.out.println("b % a = " + (b % a));
-        System.out.println("c % a = " + (c % a));
-        System.out.println("a++   = " +   (a++));
-        System.out.println("b--   = " +   (b--));
-        // Проверьте разницу в d++ и ++d
-        System.out.println("d++   = " +  (d++));
-        System.out.println("++d   = " +  (d++));
-        //commit
+        byte byteNumber = -128;
+        short shortNumber = -32768;
+        int intNumber = -2147483648;
+        long longNumber = -9223372036854775808L;
+        float floatNumber = Float.MAX_VALUE;
+        double doubleNumber = 100.005d;
+
+        //переполнение byte
+        byteNumber = (byte) (byteNumber - 1);
+        System.out.println("Вернулись к верхней границе диапазона для byte = " + byteNumber); // = 127
+
+        //переполнение short
+        shortNumber = (short) (shortNumber - 1);
+        System.out.println("Вернулись к верхней границе диапазона для short = " + shortNumber); // = 32767
+
+        //переполнение int
+        intNumber = intNumber - 1;
+        System.out.println("Вернулись к верхней границе диапазона для int = " + intNumber); // = 2147483647
+
+        //переполнение longNumber
+        longNumber = longNumber - 1L;
+        System.out.println("Вернулись к верхней границе диапазона для long = " + longNumber); // = 9223372036854775807
+
+
+
+
+
+
+
+
     }
 }
